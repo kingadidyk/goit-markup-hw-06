@@ -777,7 +777,6 @@ img {
 }
 
 .modal {
-  display: flex;
   position: absolute;
   width: 528px;
   height: 581px;
@@ -830,14 +829,13 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 background-color: var(--background-color);
 color: color: rgba(255, 255, 255, 0.6);
-display: flex;
-align-items: center;
 letter-spacing: 0.03em;
 font-weight: 400;
 font-size: 16px;
 line-height: 20px;
-padding-left: 16px;
+padding: 15px 0 15px 16px;
 tranition: 0.2s;
+outline: none;
 }
 
 .form {
@@ -846,9 +844,7 @@ tranition: 0.2s;
 }
 
 .form-footer {
-display: flex;
-justify-content: center;
-flex-direction: row;
+
 margin-left: 78px;
 }
 
@@ -862,10 +858,7 @@ color: var(--text4-color);
 }
 
 .btn-send {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-left: 12px;
+margin-left: 12px;
 letter-spacing: 0.06em;
 width: 200px;
 height: 50px;
@@ -877,9 +870,8 @@ cursor: pointer;
 }
 
 .btn-signup {
-  display: flex;
+text-align: center;
   color: var(--text4-color);
-  align-items: center;
   width: 82px;
   height: 30px;
   font-weight: 700;
@@ -891,12 +883,82 @@ cursor: pointer;
 
 .icon-send  {
   fill: var(--text4-color);
-  margin-top: 13px;
-padding-left: 24px;
+margin-left: 24px;
 position: absolute;
-	width: 65px;
-	height: 24px;
-	margin-left: -4px;
-	margin-top: -2px;
+
 }
 
+.header-form {
+  text-align: center;
+  font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: var(--text3-color);
+    margin: 0px 40px 0 40px;
+    padding-top: 40px;
+    
+}
+
+.modal-form {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    row-gap: 10px;
+    margin-top: 12px;
+    width: 100%;
+}
+
+.label-name {
+  position: relative;
+  font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    width: 100%;
+    position: relative;
+}
+
+.modal-input{
+  border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    height: 40px;
+    outline: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+}
+
+.form-icon {
+  position: absolute;
+    left: 15px;
+    top: 50%;
+    width: 18px;
+    height: 18px;
+    fill: var(--text3-color);
+}
+
+.form-text {
+  width: 448px;
+height: 120px;
+text-align: left;
+padding: 12px 16px;
+}
+
+.checkbox {
+}
+
+.modal-form-btn {
+  width: 200px;
+height: 50px;
+background: var(--background5-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: none;
+color: var(--text4-color);
+font-weight: 700;
+font-size: 16px;
+letter-spacing: 0.06em;
+margin-top: 30px;
+}
