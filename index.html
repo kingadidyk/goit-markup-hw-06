@@ -642,31 +642,32 @@
             </div>
           </div>
 
-          <div class="form-footer">
-            <p class="sign-up">Zapisz się do newslettera</p>
-            <form>
-              <div class="form">
-                <input
-                  class="mail-form"
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                />
-                <button type="submit" class="btn-send">
-                  <p class="btn-signup">Zapisz się</p>
-                  <svg class="icon-send">
-                    <use
-                      href="./images/icons.svg#icon-icon-send"
-                      width="24"
-                      height="24"
-                      x="0"
-                      y="0"
-                    ></use>
-                  </svg>
-                </button>
-              </div>
-            </form>
-          </div>
+          <form class="form-footer">
+            <label class="sign-up" for="email-newsletter"
+              >Zapisz się do newslettera</label
+            >
+            <div class="form">
+              <input
+                id="email-newsletter"
+                class="mail-form"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="btn-send">
+                Zapisz się
+                <svg class="icon-send">
+                  <use
+                    href="./images/icons.svg#icon-icon-send"
+                    width="24"
+                    height="24"
+                    x="0"
+                    y="0"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </section>
     </footer>
@@ -725,11 +726,13 @@
               value="agreement"
               class="checkbox"
             />
-            <svg class="check-icon">
+            <svg class="check-icon" width="16" height="15">
               <use
-                href="./images/icons.svg#icon-check"
+                href="./images/icons.svg#icon-Vector"
                 width="11"
                 height="8"
+                x="3"
+                y="3"
               ></use>
             </svg>
             <span>
