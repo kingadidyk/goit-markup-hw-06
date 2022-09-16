@@ -709,24 +709,33 @@
               ></use>
             </svg>
           </label>
-          <label class="label-name"
+          <label class="comment"
             >Komentarz
-            <input
-              type="text"
+            <textarea
               name="comment"
               class="modal-input form-text"
               placeholder="Wprowadź tekst"
-            />
+            ></textarea>
           </label>
 
-          <label>
+          <label class="declaration">
             <input
               type="checkbox"
               name="declaration"
               value="agreement"
               class="checkbox"
             />
-            Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
+            <svg class="check-icon">
+              <use
+                href="./images/icons.svg#icon-check"
+                width="11"
+                height="8"
+              ></use>
+            </svg>
+            <span>
+              Oświadczam iż akceptuję <a href class="form-link">Regulamin </a> i
+              <a href class="form-link">Politykę Prywatności</a>.</span
+            >
           </label>
           <button type="submit" class="modal-form-btn">Wyślij</button>
         </form>
